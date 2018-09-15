@@ -1,0 +1,14 @@
+C:\Users\ADMIN\Desktop\институт\СахГу\Локальные копии\2 курс\VSprojects\semestr_3\lab_2\bin\Debug\lab_2.exe.config
+C:\Users\ADMIN\Desktop\институт\СахГу\Локальные копии\2 курс\VSprojects\semestr_3\lab_2\bin\Debug\lab_2.exe
+C:\Users\ADMIN\Desktop\институт\СахГу\Локальные копии\2 курс\VSprojects\semestr_3\lab_2\bin\Debug\lab_2.pdb
+C:\Users\ADMIN\Desktop\институт\СахГу\Локальные копии\2 курс\VSprojects\semestr_3\lab_2\obj\Debug\lab_2.csprojAssemblyReference.cache
+C:\Users\ADMIN\Desktop\институт\СахГу\Локальные копии\2 курс\VSprojects\semestr_3\lab_2\obj\Debug\lab_2.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\институт\СахГу\Локальные копии\2 курс\VSprojects\semestr_3\lab_2\obj\Debug\lab_2.exe
+C:\Users\ADMIN\Desktop\институт\СахГу\Локальные копии\2 курс\VSprojects\semestr_3\lab_2\obj\Debug\lab_2.pdb
+E:\Projects\semestr_3\lab_2\bin\Debug\lab_2.exe.config
+E:\Projects\semestr_3\lab_2\bin\Debug\lab_2.exe
+E:\Projects\semestr_3\lab_2\bin\Debug\lab_2.pdb
+E:\Projects\semestr_3\lab_2\obj\Debug\lab_2.csprojAssemblyReference.cache
+E:\Projects\semestr_3\lab_2\obj\Debug\lab_2.csproj.CoreCompileInputs.cache
+E:\Projects\semestr_3\lab_2\obj\Debug\lab_2.exe
+E:\Projects\semestr_3\lab_2\obj\Debug\lab_2.pdb
