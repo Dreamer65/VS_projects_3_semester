@@ -21,7 +21,6 @@ namespace lab_2
                     if (N != 0)
                     {
                         Console.WriteLine("Что-то пошло не так...");
-                        Console.WriteLine("Не стоило вводить отрицательное число...");
                     }
                     else
                         Console.WriteLine("Одна монета? Серьзно?");
@@ -53,12 +52,11 @@ namespace lab_2
             while (true)
             {
                 Console.WriteLine("Введите N (N должно быть целым числом)");
-                try
+                if (int.TryParse(Console.ReadLine(), out int N))
                 {
-                    int N = int.Parse(Console.ReadLine());
                     return N;
                 }
-                catch
+                else
                 {
                     Console.WriteLine("N должно быть целым числом...");
                     Console.WriteLine("Попробуем ещё(y\\n)?");
