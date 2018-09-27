@@ -10,4 +10,5 @@ E:\Projects\semestr_3\lab_2\bin\Debug\lab_2.exe
 E:\Projects\semestr_3\lab_2\bin\Debug\lab_2.pdb
 E:\Projects\semestr_3\lab_2\obj\Debug\lab_2.exe
 E:\Projects\semestr_3\lab_2\obj\Debug\lab_2.pdb
-E:\Projects\semestr_3\lab_2\obj\Debug\lab_2.csprojResolveAssemblyReference.cache
+E:\Projects\semestr_3\lab_2\obj\Debug\lab_2.csprojAssemblyReference.cache
+E:\Projects\semestr_3\lab_2\obj\Debug\lab_2.csproj.CoreCompileInputs.cache

@@ -15,10 +15,10 @@ namespace lab_2
             {
                 Console.WriteLine("Перед вами 3^N монет");
                 N = GetN();
-                if (N <= 0)
+                if (N <= 1)
                 {
                     Console.Clear();
-                    if (N != 0)
+                    if (N <= 0)
                     {
                         Console.WriteLine("Что-то пошло не так...");
                     }
@@ -40,11 +40,53 @@ namespace lab_2
             }
 
             Console.WriteLine("Перед вами " + Math.Pow(3, (double)N)  + " монет.");
-            if(N!=1)
-                for(int i=0; i<N; i++)
+            if (N != 1)
+            {
+                int i = N-1, pos=1;
+                while (i >= 0)
                 {
+                    Console.WriteLine("На левой чаше весов лежат монеты с номерами:");
+                    for (int j = pos; j < pos + (int)Math.Pow(3, (double)i); j++)
+                    {
+                        Console.Write(" " + j);
+                    }
+                    Console.WriteLine(); Console.WriteLine();
+                    Console.WriteLine("На правой чаше весов лежат монеты с номерами:");
+                    for (int j = pos + (int)Math.Pow(3, (double)i); j < pos + 2 * Math.Pow(3, (double)i); j++)
+                    {
+                        Console.Write(" " + j);
+                    }
+                    Console.WriteLine(); Console.WriteLine();
+
+                    Console.WriteLine("Что происходит на весах?");
+                    Console.WriteLine("1 - левая чаша перевесила");
+                    Console.WriteLine("2 - правая чаша перевесила");
+                    Console.WriteLine("3 - чаши в равновесии");
+                    char key = Console.ReadKey(true).KeyChar;
+                    switch (key)
+                    {
+                        case '1':
+                            Console.WriteLine("Левая чаша перевесила.");
+                            break;
+                        case '2':
+                            Console.WriteLine("Правая чаша перевесила");
+                            pos += (int)Math.Pow(3, (double)i);
+                            break;
+                        case '3':
+                            Console.WriteLine("Чаши уравновешены");
+                            pos += 2*(int)Math.Pow(3, (double)i);
+                            break;
+                        default:
+                                Console.WriteLine("Возникла ошибка");
+                                return ;
+                    }
+                    i--;
+                    Console.Clear();
 
                 }
+                Console.WriteLine(pos);
+                Console.ReadKey(true);
+            }
         }
 
         static private int GetN()
@@ -52,7 +94,15 @@ namespace lab_2
             while (true)
             {
                 Console.WriteLine("Введите N (N должно быть целым числом)");
-                if (int.TryParse(Console.ReadLine(), out int N))
+                /*
+                 *  В VS2013 Сообщается об ошибке в строке
+                 *  if (int.TryParse(Console.ReadLine(), out int N))
+                 *  Ошибки здесь нет для VS2017 
+                 *  А VS2013 может скомпилировать ее
+                 *  Вероятнее всего VS2013 считает ее ошибкой для более старой версии .NET
+                */
+                int N;
+                if (int.TryParse(Console.ReadLine(), out N))
                 {
                     return N;
                 }
