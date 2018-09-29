@@ -43,10 +43,10 @@ namespace lab_3
             }
             Console.WriteLine();
 
-            for (int i = 0; i < args.Length; i++) 
+            foreach (string str in args)
             {
                 int N;
-                if (!int.TryParse(args[i], out N) || N <= 0)
+                if (!int.TryParse(str, out N) || N <= 0)
                 {
                     Console.WriteLine("Неверный ввод");
                 }

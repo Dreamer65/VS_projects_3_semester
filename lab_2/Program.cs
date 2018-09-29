@@ -46,17 +46,10 @@ namespace lab_2
                 while (i >= 0)
                 {
                     Console.WriteLine("На левой чаше весов лежат монеты с номерами:");
-                    for (int j = pos; j < pos + (int)Math.Pow(3, (double)i); j++)
-                    {
-                        Console.Write(" " + j);
-                    }
-                    Console.WriteLine(); Console.WriteLine();
+                    Console.WriteLine(pos + " - " + (int)(pos + (int)Math.Pow(3, (double)i)-1) + "\n");
+
                     Console.WriteLine("На правой чаше весов лежат монеты с номерами:");
-                    for (int j = pos + (int)Math.Pow(3, (double)i); j < pos + 2 * Math.Pow(3, (double)i); j++)
-                    {
-                        Console.Write(" " + j);
-                    }
-                    Console.WriteLine(); Console.WriteLine();
+                    Console.WriteLine((int)(pos + Math.Pow(3, (double)i)) + " - " + (int)(pos + 2 * Math.Pow(3, (double)i)-1) + "\n");
 
                     Console.WriteLine("Что происходит на весах?");
                     Console.WriteLine("1 - левая чаша перевесила");
