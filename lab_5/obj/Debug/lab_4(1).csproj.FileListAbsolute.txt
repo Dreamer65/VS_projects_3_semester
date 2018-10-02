@@ -1,0 +1,6 @@
+C:\Users\ADMIN\Desktop\институт\СахГу\Локальные копии\2 курс\lab_4\lab_4(1)\bin\Debug\lab_4(1).exe.config
+C:\Users\ADMIN\Desktop\институт\СахГу\Локальные копии\2 курс\lab_4\lab_4(1)\bin\Debug\lab_4(1).exe
+C:\Users\ADMIN\Desktop\институт\СахГу\Локальные копии\2 курс\lab_4\lab_4(1)\bin\Debug\lab_4(1).pdb
+C:\Users\ADMIN\Desktop\институт\СахГу\Локальные копии\2 курс\lab_4\lab_4(1)\obj\Debug\lab_4(1).csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\институт\СахГу\Локальные копии\2 курс\lab_4\lab_4(1)\obj\Debug\lab_4(1).exe
+C:\Users\ADMIN\Desktop\институт\СахГу\Локальные копии\2 курс\lab_4\lab_4(1)\obj\Debug\lab_4(1).pdb

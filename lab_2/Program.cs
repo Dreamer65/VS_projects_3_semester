@@ -27,7 +27,7 @@ namespace lab_2
                     Console.WriteLine("Попробовать снова(y\\n)?");
                     if (!YN_Dialog())
                     {
-                        Console.Clear();
+                        Console.Clear();    
                         return;
                     }
                     else
