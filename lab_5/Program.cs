@@ -19,11 +19,11 @@ namespace lab_4_1_
                 return;
             }
             Console.WriteLine("Способов поднятся на эту ступеньку у зайца:");
-            Console.WriteLine(leders(N)+"\nНажмите любую клавишу...");
+            Console.WriteLine(Leders(N)+"\nНажмите любую клавишу...");
             Console.ReadKey();
         }
 
-        static int leders(int N)
+        static int Leders(int N)
         {
             switch (N) {
                 case 1:
@@ -33,7 +33,7 @@ namespace lab_4_1_
                 case 3:
                     return 4;
                 default:
-                    return leders(N - 1) + leders(N - 2) + leders(N - 3);
+                    return Leders(N - 1) + Leders(N - 2) + Leders(N - 3);
             }
 
         }
