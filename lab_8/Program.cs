@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Threading;
 
 namespace lab_8
 {
@@ -12,6 +13,8 @@ namespace lab_8
         static private bool argRefresh = false;
         static private bool argSkeep = false;
         static private bool argHelp = false;
+
+        static private int delay = 1000;
 
         static void Main(string[] args)
         {
@@ -121,10 +124,17 @@ namespace lab_8
                 if (argAll)
                 {
                     Console.WriteLine("                  Число новых роботов:  " + robots0);
-                    if (i > 1) Console.WriteLine(" Число роботов работающих больше года:  " + robots1);
-                    if (i > 2) Console.WriteLine("Число роботов работающих больше 2 лет:  " + robots2);
-                        
-                }    
+                    Console.WriteLine(" Число роботов работающих больше года:  " + robots1);
+                    Console.WriteLine("Число роботов работающих больше 2 лет:  " + robots2);
+                    Console.WriteLine("\n             Роботов было произведено:  " + age[0]);
+                }
+
+                Console.WriteLine("----------------------------------------");
+
+                if (argRefresh)
+                {
+                    Thread.Sleep(delay);
+                }
                 
             }
             if (argSkeep)
@@ -176,9 +186,17 @@ namespace lab_8
             }
         }
 
+        static bool GetDelay(String arg)
+        {
+            if (arg.IndexOf('=') == -1) return true;
+            arg = arg.Substring(arg.IndexOf('=') + 1);
+            return int.TryParse(arg, out delay);
+
+        }
+
         static bool GetArg(String arg)
         {
-            switch (arg.ToUpper())
+            switch (arg.ToUpper().Substring(0, 2))
             {
                 case "/A":
                     argAll = true;
@@ -186,6 +204,7 @@ namespace lab_8
                 case "/R":
                     if (argSkeep) return false;
                     argRefresh = true;
+                    GetDelay(arg);
                     return true;
                 case "/S":
                     if (argRefresh) return false;
