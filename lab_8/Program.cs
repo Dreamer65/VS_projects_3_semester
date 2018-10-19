@@ -103,12 +103,9 @@ namespace lab_8
             {
                 if (argRefresh) Console.Clear();
 
-                if (argAll)
-                {
-                    robots0 = age[0];
-                    robots1 = age[1];
-                    robots2 = age[2];
-                }
+                robots0 = age[0];
+                robots1 = age[1];
+                robots2 = age[2];
 
                 robots = age[0] + age[1] + age[2];
 
@@ -127,8 +124,9 @@ namespace lab_8
                     Console.WriteLine(" Число роботов работающих больше года:  " + robots1);
                     Console.WriteLine("Число роботов работающих больше 2 лет:  " + robots2);
                     Console.WriteLine("\n             Роботов было произведено:  " + age[0]);
-                }
 
+                }
+                Console.WriteLine("           Число роботов в конце года:  " + (robots0 + robots1 + robots2 + age[0]));
                 Console.WriteLine("----------------------------------------");
 
                 if (argRefresh)
@@ -141,6 +139,7 @@ namespace lab_8
             {
                 Console.WriteLine("Год " + years);
                 Console.WriteLine("Общее число роботов: " + robots);
+                Console.WriteLine("Число роботов в конце года:  " + (robots0 + robots1 + robots2 + age[0]));
             }
             
         }
