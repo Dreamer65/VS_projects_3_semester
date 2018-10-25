@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_8", "lab_8\lab_8.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructuresLib", "StructuresLib\StructuresLib.csproj", "{715FA9EC-5A00-48B5-8BFC-D0221617B795}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_11", "lab_11\lab_11.csproj", "{CDCA2488-BADB-4BCC-970A-12C68EE0BC4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{715FA9EC-5A00-48B5-8BFC-D0221617B795}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{715FA9EC-5A00-48B5-8BFC-D0221617B795}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{715FA9EC-5A00-48B5-8BFC-D0221617B795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDCA2488-BADB-4BCC-970A-12C68EE0BC4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDCA2488-BADB-4BCC-970A-12C68EE0BC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDCA2488-BADB-4BCC-970A-12C68EE0BC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDCA2488-BADB-4BCC-970A-12C68EE0BC4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
