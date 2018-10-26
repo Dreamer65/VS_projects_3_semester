@@ -92,6 +92,10 @@ namespace lab_11
                     else
                         number1 = number1.PadRight(number1.Length + add0, '0');
             }
+            else {
+                number1 += separator;
+                number2 += separator;
+            }
             number1 = number1.PadLeft(number2.Length, '0');
             number2 = number2.PadLeft(number1.Length, '0');
 
@@ -172,6 +176,10 @@ namespace lab_11
                     else
                         number1 = number1.PadRight(number1.Length + add0, '0');
             }
+            else {
+                number1 += separator;
+                number2 += separator;
+            }
             number1 = number1.PadLeft(number2.Length, '0');
             number2 = number2.PadLeft(number1.Length, '0');
 
@@ -193,7 +201,7 @@ namespace lab_11
                 a = int.Parse(number1[i].ToString())+buf;
                 b = int.Parse(number2[i].ToString());
                 buf  = (a - b >= 0) ? 0 : -1;
-                result = ((a - b >= 0) ? a - b : 10 * a - b) + result;
+                result = ((a - b >= 0) ? a - b : 10 + a - b) + result;
             }
 
             return ((chengeSign) ? ((sign == "") ? "-" : "") : sign) + TrimToNumber(result, separator);
