@@ -1,0 +1,7 @@
+E:\Projects\semestr_3\lab_10\obj\Debug\lab_10.csprojAssemblyReference.cache
+E:\Projects\semestr_3\lab_10\obj\Debug\lab_10.csproj.CoreCompileInputs.cache
+E:\Projects\semestr_3\lab_10\bin\Debug\lab_10.exe.config
+E:\Projects\semestr_3\lab_10\bin\Debug\lab_10.exe
+E:\Projects\semestr_3\lab_10\bin\Debug\lab_10.pdb
+E:\Projects\semestr_3\lab_10\obj\Debug\lab_10.exe
+E:\Projects\semestr_3\lab_10\obj\Debug\lab_10.pdb
