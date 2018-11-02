@@ -5,3 +5,6 @@ E:\Projects\semestr_3\lab_10\bin\Debug\lab_10.exe
 E:\Projects\semestr_3\lab_10\bin\Debug\lab_10.pdb
 E:\Projects\semestr_3\lab_10\obj\Debug\lab_10.exe
 E:\Projects\semestr_3\lab_10\obj\Debug\lab_10.pdb
+E:\Projects\semestr_3\lab_10\bin\Debug\MyLibrary.dll
+E:\Projects\semestr_3\lab_10\bin\Debug\MyLibrary.pdb
+E:\Projects\semestr_3\lab_10\obj\Debug\lab_10.csproj.CopyComplete

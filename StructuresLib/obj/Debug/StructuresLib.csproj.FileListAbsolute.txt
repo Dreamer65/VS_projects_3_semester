@@ -1,0 +1,6 @@
+E:\Projects\semestr_3\StructuresLib\bin\Debug\StructuresLib.dll
+E:\Projects\semestr_3\StructuresLib\bin\Debug\StructuresLib.pdb
+E:\Projects\semestr_3\StructuresLib\obj\Debug\StructuresLib.csprojAssemblyReference.cache
+E:\Projects\semestr_3\StructuresLib\obj\Debug\StructuresLib.csproj.CoreCompileInputs.cache
+E:\Projects\semestr_3\StructuresLib\obj\Debug\StructuresLib.dll
+E:\Projects\semestr_3\StructuresLib\obj\Debug\StructuresLib.pdb

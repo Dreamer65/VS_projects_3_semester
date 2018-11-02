@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace lab_10
+namespace MyLibrary
 {
 
     /// <summary>
     /// Представляет установленную дату.
     /// </summary>
-    class MyDate
+    public class MyDate
     {
         private bool currentLeap;
         private int _day;

@@ -3,4 +3,5 @@ E:\Projects\semestr_3\lab_8\bin\Debug\lab_8.exe
 E:\Projects\semestr_3\lab_8\bin\Debug\lab_8.pdb
 E:\Projects\semestr_3\lab_8\obj\Debug\lab_8.exe
 E:\Projects\semestr_3\lab_8\obj\Debug\lab_8.pdb
-E:\Projects\semestr_3\lab_8\obj\Debug\lab_8.csprojResolveAssemblyReference.cache
+E:\Projects\semestr_3\lab_8\obj\Debug\lab_8.csprojAssemblyReference.cache
+E:\Projects\semestr_3\lab_8\obj\Debug\lab_8.csproj.CoreCompileInputs.cache

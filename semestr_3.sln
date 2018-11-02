@@ -20,6 +20,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_9", "lab_9\lab_9.csproj", "{DF5FB67D-8BE6-4B87-94E6-CDF0513FA4EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_10", "lab_10\lab_10.csproj", "{561538D1-AA7F-4E00-9A44-FBECC49B6BAC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{12E3CACF-C273-4BD2-86A4-50A3B76C2120} = {12E3CACF-C273-4BD2-86A4-50A3B76C2120}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLibrary", "MyLibrary\MyLibrary.csproj", "{12E3CACF-C273-4BD2-86A4-50A3B76C2120}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +68,10 @@ Global
 		{561538D1-AA7F-4E00-9A44-FBECC49B6BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{561538D1-AA7F-4E00-9A44-FBECC49B6BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{561538D1-AA7F-4E00-9A44-FBECC49B6BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12E3CACF-C273-4BD2-86A4-50A3B76C2120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12E3CACF-C273-4BD2-86A4-50A3B76C2120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12E3CACF-C273-4BD2-86A4-50A3B76C2120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12E3CACF-C273-4BD2-86A4-50A3B76C2120}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

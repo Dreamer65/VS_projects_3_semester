@@ -4,3 +4,4 @@ E:\Projects\semestr_3\lab_11\bin\Debug\lab_11.pdb
 E:\Projects\semestr_3\lab_11\obj\Debug\lab_11.csproj.CoreCompileInputs.cache
 E:\Projects\semestr_3\lab_11\obj\Debug\lab_11.exe
 E:\Projects\semestr_3\lab_11\obj\Debug\lab_11.pdb
+E:\Projects\semestr_3\lab_11\obj\Debug\lab_11.csprojAssemblyReference.cache
