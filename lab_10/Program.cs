@@ -11,12 +11,24 @@ namespace lab_10
         static void Main(string[] args)
         {
             MyDate date = new MyDate();
-            MyDate con = new MyDate();
-            do {
-                con.Date = Console.ReadLine();
-                Console.WriteLine(date - con);
+            MyDate con;
+            System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+            int tmp;
+            try {
+                do {
+                    tmp = Convert.ToInt32(Console.ReadLine());
+                    sw.Restart();
+                        con = tmp + date;
+                    sw.Stop();
+                    Console.WriteLine(sw.ElapsedMilliseconds.ToString());
+                    Console.WriteLine(con.Date);
+                    Console.WriteLine(con - date);
+                } while (date != con);
+            }
+            catch {
+                Console.WriteLine("Error");
                 Console.ReadKey();
-            } while (date != con);
+            }
         }
     }
 }
