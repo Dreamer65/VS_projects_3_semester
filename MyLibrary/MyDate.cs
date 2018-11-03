@@ -17,7 +17,7 @@ namespace MyLibrary
         private int _month;
         private int _year;
         private int maxYear = 9999;
-        private string _separator = ".";
+        private char[] _separator = { '.',  '/', '\\', '|', ',' };
 
         /// <summary>
         /// Инициализирует новый экземпляр класса с текущей датой.
@@ -32,7 +32,38 @@ namespace MyLibrary
         /// </summary>
         /// <param name="date">Строка задающая дату</param>
         /// <param name="separator">Устанавливает используемый разделитель</param>
-        public MyDate(string date, string separator = ".")
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="FormatException"></exception>
+        /// <exception cref="OverflowException"></exception>
+        public MyDate(string date)
+        {
+            SetDate(date, _separator);
+        }
+
+        /// <summary>
+        /// Инициализирует новый экземпляр классас заданной датой. Используемый разделитель будет изменен.
+        /// </summary>
+        /// <param name="date">Строка задающая дату</param>
+        /// <param name="separator">Устанавливает используемый разделитель</param>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="FormatException"></exception>
+        /// <exception cref="OverflowException"></exception>
+        public MyDate(string date, params char[] separator)
+        {
+            _separator = separator;
+            SetDate(date, _separator);
+        }
+
+        /// <summary>
+        /// Инициализирует новый экземпляр классас заданной датой. Если значение chengeSeparator истинно, то используемый разделитель будет изменен, 
+        /// иначе будет использоватся разделитель по умолчению.
+        /// </summary>
+        /// <param name="date">Строка задающая дату</param>
+        /// <param name="separator">Устанавливает используемый разделитель</param>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="FormatException"></exception>
+        /// <exception cref="OverflowException"></exception>
+        public MyDate(string date, bool chengeSeparator, params char[] separator)
         {
             _separator = separator;
             SetDate(date, _separator);
@@ -65,9 +96,12 @@ namespace MyLibrary
         /// </summary>
         /// <param name="date">Строка задающая дату</param>
         /// <param name="separator">Устанавливает используемый разделитель</param>
-        public void SetDate(string date, string separator = ".")
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="FormatException"></exception>
+        /// <exception cref="OverflowException"></exception>
+        public void SetDate(string date, params char[] separator)
         {
-            string[] dateArr = date.Split(separator.ToCharArray(), 3);
+            string[] dateArr = date.Split(separator, 3);
             int N = dateArr.Length;
 
             if (dateArr.Length < 3)
@@ -115,7 +149,7 @@ namespace MyLibrary
         /// Задает значение нового разделителя.
         /// </summary>
         /// <param name="separator"></param>
-        public void SetSeparator(string separator)
+        public void SetSeparator(params char[] separator)
         {
             _separator = separator;
         }
@@ -174,7 +208,7 @@ namespace MyLibrary
         public string Date
         {
             get {
-                return string.Format("{0:D1}{3}{1:D2}{3}{2:D2}", Day, Month, Year, _separator);
+                return string.Format("{0:D1}{3}{1:D2}{3}{2:D2}", Day, Month, Year, _separator[0]);
             }
         }
 
@@ -366,8 +400,7 @@ namespace MyLibrary
             result.Day += days;
             return result;
         }
-
-        // Возвращает экземпляр класса с датой спустя указанное колличество дней
+        
         public static MyDate operator +(int days, MyDate date)
         {
             return date + days;

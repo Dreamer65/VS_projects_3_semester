@@ -11,25 +11,34 @@ namespace lab_10
     {
         static void Main(string[] args)
         {
-            MyDate date = new MyDate();
-            MyDate con;
-            System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
-            int tmp;
+            if (args.Length == 0)
+                while (!ConsoleDialog.ReadValue("Введите две даты через пробел:", out args, ' '))
+                    Console.WriteLine("\nПопробуйте снова...");
+            if(args.Length == 1) {
+                Console.WriteLine("Введите вторую дату:");
+                args = (args[0] + '|' + Console.ReadLine()).Split('|');
+            }
+            if (args.Length == 0) {
+                ConsoleDialog.HoldToKeyPress("Ошибка ввода");
+                return;
+            }
+
+            MyDate date1, date2;
             try {
-                do {
-                    tmp = Convert.ToInt32(Console.ReadLine());
-                    sw.Restart();
-                        con = tmp + date;
-                    sw.Stop();
-                    Console.WriteLine(sw.ElapsedMilliseconds.ToString());
-                    Console.WriteLine(con.Date);
-                    Console.WriteLine(con - date);
-                } while (date != con);
+                date1 = new MyDate(args[0]);
+                date2 = new MyDate(args[1]);
             }
             catch {
-                Console.WriteLine("Error");
-                Console.ReadKey();
+                ConsoleDialog.HoldToKeyPress("Ошибка ввода");
+                return;
             }
+
+            int gap = date1 - date2;
+            if (gap > 0) 
+                Console.WriteLine("{0} будет через {2} дней после {1}", date1.Date, date2.Date, gap);
+            else
+                Console.WriteLine("{0} было за {2} дней до {1}", date1.Date, date2.Date, Math.Abs(gap));
+            ConsoleDialog.HoldToKeyPress();
         }
     }
 }
