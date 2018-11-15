@@ -4,6 +4,6 @@ E:\Projects\semestr_3\lab_8(new order)\bin\Debug\lab_8(new order).pdb
 E:\Projects\semestr_3\lab_8(new order)\obj\Debug\lab_8_new_order_.Form1.resources
 E:\Projects\semestr_3\lab_8(new order)\obj\Debug\lab_8_new_order_.Properties.Resources.resources
 E:\Projects\semestr_3\lab_8(new order)\obj\Debug\lab_8(new order).csproj.GenerateResource.cache
-E:\Projects\semestr_3\lab_8(new order)\obj\Debug\lab_8(new order).csproj.CoreCompileInputs.cache
 E:\Projects\semestr_3\lab_8(new order)\obj\Debug\lab_8(new order).exe
 E:\Projects\semestr_3\lab_8(new order)\obj\Debug\lab_8(new order).pdb
+E:\Projects\semestr_3\lab_8(new order)\obj\Debug\lab_8(new order).csprojResolveAssemblyReference.cache

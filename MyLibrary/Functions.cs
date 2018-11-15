@@ -21,5 +21,27 @@ namespace MyLibrary
             first = second;
             second = temp;
         }
+
+
+        /// <summary>
+        /// Удаляет из массива строк все элементы, являющиеся пустыми строками.
+        /// </summary>
+        /// <param name="strs"></param>
+        static public void ArrayDelEmpty(ref string[] strs)
+        {
+            int count = 0;
+            foreach (string str in strs) {
+                if (str == "") count++;
+            }
+            string[] result = new string[strs.Length - count];
+            int i = 0, j = 0;
+            while (j < result.Length) {
+                if (strs[i] != "") {
+                    result[j++] = strs[i];
+                }
+                i++;
+            }
+            strs = result;
+        }
     }
 }

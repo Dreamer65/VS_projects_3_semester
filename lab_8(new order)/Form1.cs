@@ -39,7 +39,7 @@ namespace lab_8_new_order_
             for (i = 0; i <= 105; i+=7) {
                 if ((i + n - m) % 5 == 0 && (i + n - k) % 3 == 0) break;
             }
-            return i + n;
+            return i + n + ((i + n < 7) ? 105 : 0);
         }
 
         private void pbAct_Click(object sender, EventArgs e)

@@ -1,0 +1,8 @@
+E:\Projects\semestr_3\lab_11(new order)\bin\Debug\lab_11(new order).exe.config
+E:\Projects\semestr_3\lab_11(new order)\obj\Debug\lab_11(new order).csprojResolveAssemblyReference.cache
+E:\Projects\semestr_3\lab_11(new order)\bin\Debug\lab_11(new order).exe
+E:\Projects\semestr_3\lab_11(new order)\bin\Debug\lab_11(new order).pdb
+E:\Projects\semestr_3\lab_11(new order)\bin\Debug\MyLibrary.dll
+E:\Projects\semestr_3\lab_11(new order)\bin\Debug\MyLibrary.pdb
+E:\Projects\semestr_3\lab_11(new order)\obj\Debug\lab_11(new order).exe
+E:\Projects\semestr_3\lab_11(new order)\obj\Debug\lab_11(new order).pdb

@@ -17,7 +17,7 @@ namespace MyLibrary
         private int _month;
         private int _year;
         private int maxYear = 9999;
-        private char[] _separator = { '.',  '/', '\\', '|', ',' };
+        private char[] _separator = { '.',  '/', '\\', '|', ',', '-' };
 
         /// <summary>
         /// Инициализирует новый экземпляр класса с текущей датой.

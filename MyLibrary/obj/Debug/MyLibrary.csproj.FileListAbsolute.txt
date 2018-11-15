@@ -1,5 +1,4 @@
 E:\Projects\semestr_3\MyLibrary\bin\Debug\MyLibrary.dll
 E:\Projects\semestr_3\MyLibrary\bin\Debug\MyLibrary.pdb
-E:\Projects\semestr_3\MyLibrary\obj\Debug\MyLibrary.csproj.CoreCompileInputs.cache
 E:\Projects\semestr_3\MyLibrary\obj\Debug\MyLibrary.dll
 E:\Projects\semestr_3\MyLibrary\obj\Debug\MyLibrary.pdb
