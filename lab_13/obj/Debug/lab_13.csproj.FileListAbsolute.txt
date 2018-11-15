@@ -1,0 +1,10 @@
+E:\Projects\semestr_3\lab_13\bin\Debug\lab_13.exe.config
+E:\Projects\semestr_3\lab_13\bin\Debug\lab_13.exe
+E:\Projects\semestr_3\lab_13\bin\Debug\lab_13.pdb
+E:\Projects\semestr_3\lab_13\bin\Debug\MyLibrary.dll
+E:\Projects\semestr_3\lab_13\bin\Debug\MyLibrary.pdb
+E:\Projects\semestr_3\lab_13\obj\Debug\lab_13.csprojAssemblyReference.cache
+E:\Projects\semestr_3\lab_13\obj\Debug\lab_13.csproj.CoreCompileInputs.cache
+E:\Projects\semestr_3\lab_13\obj\Debug\lab_13.csproj.CopyComplete
+E:\Projects\semestr_3\lab_13\obj\Debug\lab_13.exe
+E:\Projects\semestr_3\lab_13\obj\Debug\lab_13.pdb
