@@ -9,7 +9,7 @@ namespace MyLibrary
     static public class Functions
     {
         /// <summary>
-        /// Меняет местами ссылки на объекты одинакового типа
+        /// Меняет местами ссылки на объекты одинакового типа.
         /// </summary>
         /// <typeparam name="T">Класс объектов</typeparam>
         /// <param name="first"></param>
@@ -42,6 +42,19 @@ namespace MyLibrary
                 i++;
             }
             strs = result;
+        }
+
+        /// <summary>
+        /// Удаляет из строки все лишние пробелы.
+        /// </summary>
+        /// <param name="str"></param>
+        static public void ExtraSpaces(ref string str){
+            int pos;
+            str.Trim();
+            do {
+                pos = str.IndexOf("  ");
+                if (pos > 0) str = str.Remove(pos, 2).Insert(pos, " ");
+            } while (pos > 0);
         }
     }
 }

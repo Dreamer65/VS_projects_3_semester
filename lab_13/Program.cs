@@ -26,28 +26,29 @@ namespace lab_13
                     ConsoleDialog.HoldToKeyPress("В строке присудствуют недопустимые символы.");
                     continue;
                 }
-                break;
-            }
-            int i, pos, count = 0, countCurr, iter = 0;
-            do {
-                countCurr = 0;
-                i = 0;
-                while (i < str.Length) {
-                    pos = str.Substring(i).IndexOf("><");
-                    if (pos < 0) {
-                        break;
+
+                int i, pos, count = 0, countCurr, iter = 0;
+                do {
+                    countCurr = 0;
+                    i = 0;
+                    while (i < str.Length) {
+                        pos = str.Substring(i).IndexOf("><");
+                        if (pos < 0) {
+                            break;
+                        }
+                        countCurr++;
+                        str = str.Remove(i + pos, 2).Insert(i + pos, "<>");
+                        i = pos + 2;
                     }
-                    countCurr++;
-                    str = str.Remove(i+pos, 2).Insert(i+pos, "<>");
-                    i += 2;
-                }
-                if (countCurr != 0) {
-                    Console.WriteLine("После {0} серии расворотов:\n" + str, ++iter);
-                    Console.WriteLine();
-                    count += countCurr;
-                }
-            } while (countCurr != 0);
-            ConsoleDialog.HoldToKeyPress(string.Format("Всего было совершено {0} пар разворотов за {1} серии.", count, iter));
+                    if (countCurr != 0) {
+                        Console.WriteLine("После {0} серии разворотов:\n" + str, ++iter);
+                        Console.WriteLine();
+                        count += countCurr;
+                    }
+                } while (countCurr != 0);
+                Console.WriteLine("Всего было совершено {0} пар разворотов за {1} серии.", count, iter);
+                if (!ConsoleDialog.YN_Dialog("Повторить?")) break;
+            }
         }
 
         static bool Correct(string str)

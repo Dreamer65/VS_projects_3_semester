@@ -1,0 +1,11 @@
+E:\Projects\semestr_3\lab_13(new order)\bin\Debug\lab_13(new order).exe.config
+E:\Projects\semestr_3\lab_13(new order)\obj\Debug\lab_13(new order).csprojResolveAssemblyReference.cache
+E:\Projects\semestr_3\lab_13(new order)\obj\Debug\lab_13_new_order_.Form1.resources
+E:\Projects\semestr_3\lab_13(new order)\obj\Debug\lab_13_new_order_.Properties.Resources.resources
+E:\Projects\semestr_3\lab_13(new order)\obj\Debug\lab_13(new order).csproj.GenerateResource.Cache
+E:\Projects\semestr_3\lab_13(new order)\bin\Debug\lab_13(new order).exe
+E:\Projects\semestr_3\lab_13(new order)\bin\Debug\lab_13(new order).pdb
+E:\Projects\semestr_3\lab_13(new order)\bin\Debug\MyLibrary.dll
+E:\Projects\semestr_3\lab_13(new order)\bin\Debug\MyLibrary.pdb
+E:\Projects\semestr_3\lab_13(new order)\obj\Debug\lab_13(new order).exe
+E:\Projects\semestr_3\lab_13(new order)\obj\Debug\lab_13(new order).pdb
